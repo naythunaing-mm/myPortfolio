@@ -26,6 +26,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style1.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <!-- =======================================================
   * Template Name: iPortfolio
@@ -89,50 +90,80 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="">
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./assets/img/hero-bg4.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5 class="englishText">Nay Thu Naing</h1>
-            <h5 class="japaneseText">ネートウナイン</h1>
-              <p class="text-center">I'm <span class="typed" data-typed-items="Junior PHP Developer, Developer, Freelancer"></span></p>
-          </div>
+  <section class="featured shadow-none bg-light rounded">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <article class="featured-post p-2">
+                    <div id="articleCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- First Article Slide -->
+                            <div class="carousel-item active">
+                                <article class="featured-post">
+                                    <div class="featured-post-content mt-5">
+                                        <div class="featured-post-author">
+                                            <img style="width: 100px;height: 100px;" class="border border-info p-1" src="assets/img/author.png" alt="author" />
+                                            <p>By <span>Nay Thu Naing</span></p>
+                                        </div>
+                                        <a href="single-blog.html" class="featured-post-title">
+                                          JAVA/PHP Developer
+                                        </a>
+                                    </div>
+                                    <div class="featured-post-thumb">
+                                        <img src="assets/img/featured-post2.jpg" alt="feature-post-thumb" class="d-block w-100" />
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Second Article Slide -->
+                            <div class="carousel-item">
+                                <article class="featured-post">
+                                    <div class="featured-post-content mt-5">
+                                        <div class="featured-post-author">
+                                          <img style="width: 100px;height: 100px;" class="border border-info p-1" src="assets/img/author.png" alt="author" />
+                                            <p>By <span>Nay Thu Naing</span></p>
+                                        </div>
+                                        <a href="single-blog.html" class="featured-post-title">
+                                          JAVA/PHP Developer
+                                        </a>
+                                    </div>
+                                    <div class="featured-post-thumb">
+                                        <img src="assets/img/featured-post2.jpg" alt="feature-post-thumb" class="d-block w-100" />
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Third Article Slide -->
+                            <div class="carousel-item">
+                                <article class="featured-post">
+                                    <div class="featured-post-content mt-5">
+                                        <div class="featured-post-author">
+                                            <img style="width: 100px;height: 100px;"class="border border-info p-1" src="assets/img/author.png" alt="author" />
+                                            <p>By <span>Nay Thu Naing</span></p>
+                                        </div>
+                                        <a href="single-blog.html" class="featured-post-title">
+                                          JAVA/PHP Developer
+                                        </a>
+                                    </div>
+                                    <div class="featured-post-thumb">
+                                        <img src="assets/img/featured-post3.jpg" alt="feature-post-thumb" class="d-block w-100" />
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <!-- Carousel Controls -->
+                        <a class="carousel-control-prev" href="#articleCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#articleCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
         </div>
-        <div class="carousel-item">
-          <img src="./assets/img/hero-bg2.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5 class="englishText">Nay Thu Naing</h1>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/img/hero-bg3.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5 class="englishText">Nay Thu Naing</h1>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
-    <!-- <div class="hero-container" data-aos="fade-in">
-      <h1 class="englishText">Nay Thu Naing</h1>
-      <h1 class="japaneseText">ネートウナイン</h1>
-      <p>I'm <span class="typed" data-typed-items="Junior PHP Developer, Developer, Freelancer"></span></p>
-    </div> -->
-  </section><!-- End Hero -->
+  </section>
 
   <main id="main">
 
@@ -142,7 +173,7 @@
 
         <div class="section-title">
           <h2>About</h2>
-          <p class="text-justify">I am a passionate and detail-oriented Junior PHP Developer with a strong foundation in web development. I am dedicated to writing clean, efficient, and maintainable code while constantly seeking to improve my skills and stay updated with the latest technologies. My goal is to create seamless and user-friendly web applications that enhance the online experience.</p>
+          <p class="text-justify">I am a passionate and detail-oriented JAVA/PHP Developer with a strong foundation in web development. I am dedicated to writing clean, efficient, and maintainable code while constantly seeking to improve my skills and stay updated with the latest technologies. My goal is to create seamless and user-friendly web applications that enhance the online experience.</p>
         </div>
 
         <div class="row">
@@ -150,7 +181,7 @@
             <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Junior PHP Developer</h3>
+            <h3>JAVA/PHP Developer</h3>
             <p class="fst-italic">
               Developed a web-based task management system using Laravel PHP framework. Implemented user authentication, task creation, assignment, and completion functionalities. Utilized MySQL for database management and jQuery for dynamic content updates. The system improved team collaboration and task tracking within the organization.
             </p>
@@ -158,7 +189,7 @@
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>28 Oct 2000</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>https://github.com/NayThuNaingg</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span><a href="https://github.com/naythunaing-mm">https://github.com/naythunaing-mm</a></span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>09772803152</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Tamwe, Yangon</span></li>
                 </ul>
@@ -167,7 +198,7 @@
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>23</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>naythunaing.mm@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span><a href="https://mail.google.com/mail/u/0/#sent">naythunaing.jp@gmail.com</a></span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
                 </ul>
               </div>
@@ -195,7 +226,7 @@
             <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>初級PHP開発者</h3>
+            <h3>初級JAVA/PHP開発者</h3>
             <p class="fst-italic">
               Laravel PHPフレームワークを使用してWebベースのタスク管理システムを開発しました。ユーザー認証、タスクの作成、割り当て、完了機能を実装しました。データベース管理にはMySQLを使用し、動的なコンテンツの更新にはjQueryを活用しました。このシステムにより、組織内でのチーム協力とタスクの追跡が向上しました。
             </p>
@@ -203,7 +234,7 @@
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>誕生日:</strong> <span>2000年10月28日</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>https://github.com/NayThuNaingg</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>GitHub:</strong> <span><a href="https://github.com/naythunaing-mm">https://github.com/naythunaing-mm</a></span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>電話番号:</strong> <span>09772803152</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>都市:</strong> <span>ヤンゴン、タムウェ</span></li>
                 </ul>
@@ -212,7 +243,7 @@
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>年齢:</strong> <span>23歳</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>学位:</strong> <span>学士</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>メール:</strong> <span>naythunaing.mm@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>メール:</strong> <span><a href="https://mail.google.com/mail/u/0/#sent">naythunaing.jp@gmail.com</a></span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>フリーランス:</strong> <span>可能</span></li>
                 </ul>
               </div>
@@ -409,7 +440,7 @@
 
         <div class="section-title">
           <h2>Resume</h2>
-          <p>Detail-oriented and motivated Junior PHP Developer with hands-on experience in developing robust and user-friendly web applications. Proficient in PHP, JavaScript, and web technologies. Committed to writing clean and efficient code. Seeking to leverage skills in a dynamic team environment at SoftGuide Company.</p>
+          <p>Detail-oriented and motivated JAVA/PHP Developer with hands-on experience in developing robust and user-friendly web applications. Proficient in PHP, JavaScript, and web technologies. Committed to writing clean and efficient code. Seeking to leverage skills in a dynamic team environment at SoftGuide Company.</p>
         </div>
 
         <div class="row">
@@ -436,7 +467,7 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
-              <h4>Junior PHP Developer</h4>
+              <h4>JAVA/PHP Developer</h4>
               <h5>2023 - Present</h5>
               <p><em>Experion, Pyay, Yangon </em></p>
               <ul>
@@ -507,7 +538,7 @@
 
         <div class="section-title">
           <h2>Portfolio</h2>
-          <p>I am a passionate and detail-oriented Junior PHP Developer with a strong foundation in web development. I am dedicated to writing clean, efficient, and maintainable code while constantly seeking to improve my skills and stay updated with the latest technologies. My goal is to create seamless and user-friendly web applications that enhance the online experience.</p>
+          <p>I am a passionate and detail-oriented JAVA/PHP Developer with a strong foundation in web development. I am dedicated to writing clean, efficient, and maintainable code while constantly seeking to improve my skills and stay updated with the latest technologies. My goal is to create seamless and user-friendly web applications that enhance the online experience.</p>
         </div>
 
         <div class="row" data-aos="fade-up">
@@ -729,7 +760,7 @@
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
             <div class="icon"><i class="bi bi-card-checklist"></i></div>
-            <h4 class="title"><a href="">Custom PHP Applications</a></h4>
+            <h4 class="title"><a href="">Custom JAVA/PHP Applications</a></h4>
             <p class="description">Developers can create custom web applications tailored to specific business needs. These applications can range from content management systems to e-commerce platforms.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
@@ -954,7 +985,7 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-        Designed by <a href="https://github.com/NayThuNaingg">Nay Thu Naing</a>
+        Designed by <a href="https://github.com/naythunaing-mm">Nay Thu Naing</a>
       </div>
     </div>
   </footer><!-- End  Footer -->
@@ -974,6 +1005,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/script.js"></script>
   <script>
     $(document).ready(function(){
       $(".englishText").show();
